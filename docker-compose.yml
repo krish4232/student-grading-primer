@@ -15,7 +15,7 @@ services:
 
   backend:
     # TODO: you will need to add to this
-    build:  ./backend
+    build: ./backend
     ports:
       - "5000:5000"
     environment:
@@ -23,10 +23,8 @@ services:
       - DB_NAME=marksdb
       - DB_USER=marksuser
       - DB_PASSWORD=markspass
-    
     depends_on:
       - db
-
 
   frontend:
     # TODO: you will need to add to this
@@ -46,4 +44,3 @@ services:
 
 volumes:
   pg_data:
-    
