@@ -117,7 +117,7 @@ def get_stats():
             return jsonify({"count": len(students), "average": None, "min": None, "max": None}), 200
 
         return jsonify({
-            "count": len(students),
+            "count": len(marks),
             "average": sum(marks) / len(marks),
             "min": min(marks),
             "max": max(marks)
